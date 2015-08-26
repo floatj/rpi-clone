@@ -39,9 +39,10 @@ fi
 if ! rsync --version > /dev/null
 then
 	echo -e "\nOoops! rpi-clone needs the rsync program but cannot find it."
-	echo "Make sure rsync is installed:"
+	echo "Make sure rsync and parted is installed:"
 	echo "    $ sudo apt-get update"
 	echo -e "    $ sudo apt-get install rsync\n"
+	echo -e "    $ sudo apt-get install parted\n"
 	exit 0
 fi
 
